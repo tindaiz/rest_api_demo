@@ -1,6 +1,42 @@
 # rest_api_demo
+# Post Manager App (Flutter REST API Demo)
 
-A new Flutter project.
+Ứng dụng Flutter mô phỏng **quản lý bài viết (Post Manager)** — minh họa cách gọi **REST API** sử dụng **cả hai thư viện `http` và `dio`**.  
+Dự án này dùng **JSONPlaceholder API** để thực hành các phương thức HTTP cơ bản:  
+`GET`, `POST`, `PUT`, `DELETE`, kèm theo **Interceptor** và **Tìm kiếm bài viết**.
+
+---
+
+## Tính năng chính
+
+| Tính năng | Mô tả | Thư viện sử dụng |
+|------------|--------|------------------|
+| **GET** | Lấy danh sách bài viết | `http`, `dio` |
+| **POST** | Tạo bài viết mới | `http`, `dio` |
+| **PUT** | Chỉnh sửa bài viết | `http`, `dio` |
+| **DELETE** | Xóa bài viết | `http`, `dio` |
+| **Interceptor** | Theo dõi request & response (log) | `dio` |
+| **Search** | Lọc bài viết theo tiêu đề | Flutter Widget |
+
+---
+
+lib/
+│
+├── main.dart # Điểm khởi động ứng dụng
+│
+├── models/
+│ └── post_model.dart # Mô hình dữ liệu Post
+│
+├── services/
+│ ├── api_http_service.dart # Xử lý API bằng http package
+│ └── api_dio_service.dart # Xử lý API bằng dio + interceptor
+│
+├── screens/
+│ ├── post_list_screen.dart # Hiển thị danh sách & tìm kiếm
+│ └── post_form_screen.dart # Thêm, sửa, xóa bài viết
+│
+└── widgets/
+└── post_card.dart # Giao diện 1 bài viết
 
 ## Getting Started
 
