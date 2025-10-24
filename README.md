@@ -28,6 +28,7 @@ Dự án này dùng **JSONPlaceholder API** để thực hành các phương th�
 ## Project Structure
 
 The project follows a modular structure to separate concerns and improve maintainability. Below is the directory structure of the `lib/` folder:
+```
 lib/
 │
 ├── main.dart              # Điểm khởi động ứng dụng
@@ -44,8 +45,8 @@ lib/
 │   └── post_form_screen.dart  # Thêm, sửa, xóa bài viết
 │
 └── widgets/
-    └── post_card.dart     # Giao diện 1 bài viết trong readme
-
+    └── post_card.dart     # Giao diện 1 bài viết 
+```
 ### File Descriptions
 - `main.dart`: Initializes the Flutter app and sets up the root widget.
 - `post_model.dart`: Defines the `Post` data model for JSON serialization.
