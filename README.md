@@ -7,6 +7,11 @@ Dự án này dùng **JSONPlaceholder API** để thực hành các phương th�
 
 ---
 
+## Table of Contents
+- [Tính năng chính](#tính-năng-chính)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+
 ## Tính năng chính
 
 | Tính năng | Mô tả | Thư viện sử dụng |
@@ -20,23 +25,10 @@ Dự án này dùng **JSONPlaceholder API** để thực hành các phương th�
 
 ---
 
-lib/
-│
-├── main.dart              # Điểm khởi động ứng dụng
-│
-├── models/
-│   └── post_model.dart    # Mô hình dữ liệu Post
-│
-├── services/
-│   ├── api_http_service.dart  # Xử lý API bằng http package
-│   └── api_dio_service.dart   # Xử lý API bằng dio + interceptor
-│
-├── screens/
-│   ├── post_list_screen.dart  # Hiển thị danh sách & tìm kiếm
-│   └── post_form_screen.dart  # Thêm, sửa, xóa bài viết
-│
-└── widgets/
-    └── post_card.dart     # Giao diện 1 bài viết trong readme
+## Project Structure
+
+The project follows a modular structure to separate concerns and improve maintainability. Below is the directory structure of the `lib/` folder:
+
 
 ## Getting Started
 
