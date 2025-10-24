@@ -29,6 +29,16 @@ Dự án này dùng **JSONPlaceholder API** để thực hành các phương th�
 
 The project follows a modular structure to separate concerns and improve maintainability. Below is the directory structure of the `lib/` folder:
 
+### File Descriptions
+- `main.dart`: Initializes the Flutter app and sets up the root widget.
+- `post_model.dart`: Defines the `Post` data model for JSON serialization.
+- `api_http_service.dart`: Handles HTTP requests using the `http` package.
+- `api_dio_service.dart`: Uses `dio` with interceptors for advanced API handling.
+- `post_list_screen.dart`: Displays a list of posts with search functionality.
+- `post_form_screen.dart`: Provides a form for creating, updating, or deleting posts.
+- `post_card.dart`: A reusable widget for rendering individual post items.
+
+---
 
 ## Getting Started
 
@@ -42,3 +52,4 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
